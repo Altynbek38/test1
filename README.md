@@ -8,71 +8,70 @@ This project is a Django-based booking platform inspired by services like Airbnb
 
 - **Registration** (`register_user`):  
   Allows users to create an account with custom user details. Upon successful registration, the user is automatically logged in and redirected to the home page.
-  - Templates: `users/register.html`
+
 
 - **Login** (`login_user`):  
   Authenticates users using their email and password. Upon successful login, users are redirected to the home page.
-  - Templates: `users/login.html`
+
 
 - **Logout** (`logout_user`):  
   Logs the user out and redirects them to the home page.
 
 - **Change Password** (`change_password`):  
   Allows users to change their password using Django’s `PasswordChangeForm`. Updates the session upon a successful password change.
-  - Templates: `users/change_password.html`
+
 
 - **Update User Profile** (`update_user`):  
   Users can update their account information via the `CustomUserChangeForm` and `ProfileForm`.
-  - Templates: `users/update.html`
 
 - **Delete User Account** (`delete_user`):  
   Authenticated users can delete their account, which removes their profile and redirects them to the home page.
-  - Templates: `users/delete.html`
+
 
 - **User Profile** (`profile`):  
   Displays the profile of the authenticated user.
-  - Templates: `users/profile.html`
+
 
 - **User Detail** (`user_detail`):  
   Shows details of a specific user based on their user ID.
-  - Templates: `users/user_detail.html`
+
 
 ### Listing and Room Management
 
 - **Create Listing** (`create_listing`):  
   Allows hosts to submit a listing with images via `ListingCreationForm` and `ListingImageFormSet`. Upon success, the listing is saved along with its images.
-  - Templates: `listing/create.html`
+
 
 - **Listing List** (`listing_list`):  
   Displays all available listings in the system.
-  - Templates: `listing/list.html`
+
 
 - **Listing Detail** (`listing_detail`):  
   Shows detailed information about a specific listing.
-  - Templates: `listing/detail.html`
+
 
 - **Update Listing** (`update_listing`):  
   Allows hosts to update their existing listing and its images.
-  - Templates: `listing/update.html`
+
 
 - **Delete Listing** (`delete_listing`):  
   Allows hosts to delete their listing and its associated images.
 
 - **Create Room** (`create_room`):  
   Allows users to create rooms within a listing using `RoomCreationForm` and `RoomImageFormSet`.
-  - Templates: `room/create.html`
+
 
 - **Room List** (`room_list`):  
   Displays all available rooms.
-  - Templates: `room/list.html`
+
 
 - **Room Detail** (`room_detail`):  
   Shows detailed information about a specific room.
-  - Templates: `room/detail.html`
+
 
 - **Update Room** (`update_room`):  
   Allows hosts to update room details and images.
-  - Templates: `room/update.html`
+ 
 
 - **Delete Room** (`delete_room`):  
   Allows hosts to delete a room and its associated images.
@@ -81,39 +80,39 @@ This project is a Django-based booking platform inspired by services like Airbnb
 
 - **Create Booking** (`booking_create`):  
   Allows users to book a listing or room. The total price is calculated based on the booking dates and room/listing price.
-  - Templates: `bookings/booking_create.html`
+
 
 - **Booking List** (`booking_list`):  
   Displays all bookings made by the authenticated user.
-  - Templates: `bookings/booking_list.html`
+
 
 - **Booking Detail** (`booking_detail`):  
   Displays detailed information about a specific booking.
-  - Templates: `bookings/booking_detail.html`
+
 
 ### Payment Processing
 
 - **Create Payment** (`payment_create`):  
   Initiates PayPal payment using `PayPalPaymentsForm` and redirects users to PayPal for transaction completion.
-  - Templates: `bookings/payment_create.html`
+
 
 - **Payment Success** (`payment_success`):  
   Marks a booking as "Confirmed" and payment as "Paid" after a successful PayPal payment.
-  - Templates: `bookings/payment_success.html`
+
 
 - **Payment Cancel** (`payment_cancel`):  
   Handles canceled payments and maintains the booking status.
-  - Templates: `bookings/payment_cancel.html`
+
 
 ### Reviews
 
 - **Create Review** (`review_create`):  
   Allows users to leave reviews for a listing after a booking experience.
-  - Templates: `review_create.html`
+
 
 - **Review List** (`review_list`):  
   Displays a list of reviews for a particular listing.
-  - Templates: `review_list.html`
+
 
 - **Update Review** (`review_update`):  
   Allows users to update their review for a booking.
